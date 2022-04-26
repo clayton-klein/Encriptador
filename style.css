@@ -70,7 +70,7 @@ main {
     padding: 3px 0px 0px 10px;
     font-family: var(--font-orbitron);
     font-size: 1rem;
-    margin: 10px;
+    margin: 30px 10px 10px 10px;
     width: 95%;
     height: 25vh;
     border: none;
@@ -140,7 +140,7 @@ button {
     height: 30vh;
     display: flex;
     font-size: 0.7rem;
-    margin: 40px 0px;
+    margin: 40px 0px 30px 0px;
 }
 
 .btn-copiar {
