@@ -196,13 +196,10 @@ footer img {
 }
 
 .creditos {
+    font-size: 0.7rem;
     margin-top: 20px;
     text-align: left;
     line-height: 1.5rem;
-}
-
-.creditos p {
-    text-align: center;
 }
 
 a {
