@@ -45,10 +45,10 @@ function criptografar() {
     let mensagem = textoInput.value;
 
     if(!mensagem) {
-        alert('Digite uma mensagem para ser criptografada');
+        alert('Primeiro digite uma mensagem para ser criptografada.');
         return;
     } else if( !regex.test(mensagem) ) {
-        alert('Utilize somente letras minúsculas e sem acento.');
+        alert('Utilize somente letras minúsculas e sem acentos.');
         textoInput.value = '';
         textoInput.focus();
         return;  
@@ -72,7 +72,7 @@ function descriptografar() {
     let mensagemSaida = textoInput.value;
 
     if(!mensagemSaida) {
-        alert('Digite uma mensagem para ser descriptografada');
+        alert('Primeiro digite uma mensagem para ser descriptografada.');
         textoInput.focus();
         return;
     };
@@ -90,15 +90,11 @@ function descriptografar() {
 };
 
 function copiar() { 
-    navigator.clipboard.writeText(textoOutput.value);
+    navigator.clipboard.writeText(textoOutput.value)
     textoOutput.value = '';
     boxOutput.style.display = 'none';
     imagemSemTexto.style.display = 'flex';
     textoInput.focus();
 
-    alert('Texto copiado')
-};
-
-function mudarTema() {
-    
+    alert('Mensagem copiada.')
 };
