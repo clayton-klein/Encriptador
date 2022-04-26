@@ -140,7 +140,7 @@ button {
     height: 30vh;
     display: flex;
     font-size: 0.7rem;
-    margin-top: 50px;
+    margin: 40px 0px;
 }
 
 .btn-copiar {
@@ -193,6 +193,16 @@ footer {
 footer img {
     margin: 10px;
     width: 10%;
+}
+
+.creditos {
+    margin-top: 20px;
+    text-align: left;
+    line-height: 1.5rem;
+}
+
+.creditos p {
+    text-align: center;
 }
 
 a {
