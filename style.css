@@ -165,7 +165,8 @@ button {
     border: none;
     background-color: var(--branco-suave);
     outline-color: var(--salmao);
-    word-wrap: normal;
+    word-break: break-word;
+    margin: 0px 5px;
 }
 
 .no-message {
@@ -181,6 +182,10 @@ button {
     display: block;
     width: 45%;
     margin: 10px;
+}
+
+.no-message p {
+    margin-bottom: 6px;
 }
 
 footer {
@@ -199,7 +204,8 @@ footer img {
     font-size: 0.7rem;
     margin-top: 20px;
     text-align: left;
-    line-height: 1.5rem;
+    line-height: 1rem;
+    text-align: center;
 }
 
 a {
