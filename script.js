@@ -90,7 +90,7 @@ function descriptografar() {
 };
 
 function copiar() { 
-    navigator.clipboard.writeText(textoOutput.value)
+    navigator.clipboard.writeText(textoOutput.value);
     textoOutput.value = '';
     boxOutput.style.display = 'none';
     imagemSemTexto.style.display = 'flex';
