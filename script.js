@@ -1,3 +1,5 @@
+'use strict';
+
 // selecionando elementos do HTML
 let textoInput = document.querySelector('#textoInput');
 let imagemSemTexto = document.querySelector('#noMessage')
