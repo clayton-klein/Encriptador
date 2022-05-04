@@ -69,8 +69,15 @@ function descriptografar() {
 };
 
 function copiar() {
-    let textoCopiado = textoOutput.value; 
-    navigator.clipboard.writeText(textoCopiado);
+    let textoCopiado = textoOutput.value;
+    navigator.clipboard.writeText(textoCopiado)
+    .then( () => {
+        console.log('mensagem copiada com sucesso');
+    })
+    .catch( ()=> {
+        console.log('erro ao copiar a mensagem!');
+    });
+
     boxOutput.style.display = 'none';
     imagemSemTexto.style.display = 'flex';
     textoInput.focus();
