@@ -69,6 +69,8 @@ function descriptografar() {
 };
 
 function copiar() {
+    alert('Mensagem copiada.');
+    
     let textoCopiado = textoOutput.value;
     navigator.clipboard.writeText(textoCopiado)
     .then( () => {
@@ -81,5 +83,4 @@ function copiar() {
     boxOutput.style.display = 'none';
     imagemSemTexto.style.display = 'flex';
     textoInput.focus();
-    alert('Mensagem copiada.')
 };
