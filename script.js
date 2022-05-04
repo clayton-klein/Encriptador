@@ -72,6 +72,5 @@ function copiar() {
     boxOutput.style.display = 'none';
     imagemSemTexto.style.display = 'flex';
     textoInput.focus();
-
     alert('Mensagem copiada.')
 };
