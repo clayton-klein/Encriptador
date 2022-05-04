@@ -1,5 +1,7 @@
 # Encriptador de palavras.
 
+<img src="badge-conclusao-primeiro-desafio-encriptador.png" alt="medalha por ter cumprido o primeiro desafio" align="right" width="200"/>
+
 **Primeiro Challange do Programa ONE/Alura 2022.**
 
 **Objetivo:**
