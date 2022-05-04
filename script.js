@@ -1,4 +1,4 @@
-//selecionando elementos
+// selecionando elementos do HTML
 let textoInput = document.querySelector('#textoInput');
 let imagemSemTexto = document.querySelector('#noMessage')
 let boxOutput = document.querySelector(".texto-output");
@@ -8,15 +8,15 @@ let btnCriptografar = document.querySelector('#btnCriptografar');
 let btnDescriptografar = document.querySelector('#btnDescriptografar');
 let btnCopiar = document.querySelector('#btnCopiar');
 
-//adicionando eventos aos botoes
+// adicionando eventos aos botoes
 btnCriptografar.addEventListener('click', criptografar);
 btnDescriptografar.addEventListener('click', descriptografar);
 btnCopiar.addEventListener('click', copiar);
 
-//iniciar já com o cursor na textarea para digitar a mensagem
+// iniciar já com o cursor na textarea para digitar a mensagem
 textoInput.focus();
 
-//esta regex aceita somente letras minúsculas e sem acento, inclusive escritos em múltiplas linhas.
+// esta regex aceita somente letras minúsculas e sem acento, inclusive escritos em múltiplas linhas.
 let regex = /^[a-z\s]+$/;
 function criptografar() {
     let mensagem = textoInput.value;
@@ -66,9 +66,9 @@ function descriptografar() {
     textoInput.value = '';
 };
 
-function copiar() { 
-    navigator.clipboard.writeText(textoOutput.value);
-    textoOutput.value = '';
+function copiar() {
+    let textoCopiado = textoOutput.value; 
+    navigator.clipboard.writeText(textoCopiado);
     boxOutput.style.display = 'none';
     imagemSemTexto.style.display = 'flex';
     textoInput.focus();
