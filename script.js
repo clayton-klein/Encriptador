@@ -74,8 +74,12 @@ function copiar() {
     // selecionar o campo de texto para celulares.
     textoOutput.setSelectionRange(0, 99999);
     // copiar o texto de dentro do text-area.
+    // a princípio estava utilizando este método navigator abaixo,
+    // porém n sei pq n estava funcionando no meu celular (mas no PC sim),
+    // então substituí por execCommand e deu certo!!!
+    // deixo comentado aqui como exemplo...
+    // navigator.clipboard.writeText(textoOutput.value); X
     document.execCommand('copy');
-    //navigator.clipboard.writeText(textoOutput.value);
 
     boxOutput.style.display = 'none';
     imagemSemTexto.style.display = 'flex';
