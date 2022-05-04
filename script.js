@@ -3,7 +3,7 @@
 // selecionando elementos do HTML
 let textoInput = document.querySelector('#textoInput');
 let imagemSemTexto = document.querySelector('#noMessage')
-let boxOutput = document.querySelector(".texto-output");
+let boxOutput = document.querySelector('.texto-output');
 let textoOutput = document.querySelector('#textoOutput');
 
 let btnCriptografar = document.querySelector('#btnCriptografar');
@@ -71,7 +71,7 @@ function descriptografar() {
 function copiar() {
     // selecionar o campo de texto.
     textoOutput.select();
-    // para celulares.
+    // selecionar o campo de texto para celulares.
     textoOutput.setSelectionRange(0, 99999);
     // copiar o texto de dentro do text-area.
     navigator.clipboard.writeText(textoOutput.value);
