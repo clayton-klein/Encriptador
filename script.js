@@ -69,18 +69,15 @@ function descriptografar() {
 };
 
 function copiar() {
-    //alert('Mensagem copiada.');
-
-    let textoCopiado = textoOutput.value;
-    navigator.clipboard.writeText(textoCopiado)
-    .then( () => {
-        console.log('mensagem copiada com sucesso');
-    })
-    .catch( ()=> {
-        console.log('erro ao copiar a mensagem!');
-    });
+    // selecionar o campo de texto.
+    textoOutput.select();
+    // para celulares.
+    textoOutput.setSelectionRange(0, 99999);
+    // copiar o texto de dentro do text-area.
+    navigator.clipboard.writeText(textoOutput.value);
 
     boxOutput.style.display = 'none';
     imagemSemTexto.style.display = 'flex';
+    alert('Mensagem copiada.');
     textoInput.focus();
 };
