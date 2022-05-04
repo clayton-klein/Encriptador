@@ -69,8 +69,8 @@ function descriptografar() {
 };
 
 function copiar() {
-    alert('Mensagem copiada.');
-    
+    //alert('Mensagem copiada.');
+
     let textoCopiado = textoOutput.value;
     navigator.clipboard.writeText(textoCopiado)
     .then( () => {
