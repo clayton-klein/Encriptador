@@ -74,7 +74,8 @@ function copiar() {
     // selecionar o campo de texto para celulares.
     textoOutput.setSelectionRange(0, 99999);
     // copiar o texto de dentro do text-area.
-    navigator.clipboard.writeText(textoOutput.value);
+    document.execCommand('copy');
+    //navigator.clipboard.writeText(textoOutput.value);
 
     boxOutput.style.display = 'none';
     imagemSemTexto.style.display = 'flex';
