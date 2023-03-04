@@ -2,7 +2,7 @@
 
 <img src="badge-conclusao-primeiro-desafio-encriptador.png" alt="medalha por ter cumprido o primeiro desafio" align="right" width="200"/>
 
-**Primeiro Challange do Programa ONE/Alura 2022.**
+**Primeiro Challange do Programa ONE 2022.**
 
 **Objetivo:**
 Desenvolver uma aplicação que criptografa textos, assim você poderá trocar mensagens secretas com outras pessoas que saibam o segredo da criptografia utilizada.
