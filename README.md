@@ -1,3 +1,8 @@
+**Status: finalizado.**
+<br>
+<br>
+<br>
+
 # Encriptador de palavras.
 
 <img src="badge-conclusao-primeiro-desafio-encriptador.png" alt="medalha por ter cumprido o primeiro desafio" align="right" width="200"/>
